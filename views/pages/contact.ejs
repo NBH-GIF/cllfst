@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+		<link rel="stylesheet" href="css/main.css" />
+
+</head>
+<style>
+  .btn{
+font-size: 18px;
+text-decoration: none;
+color :#87F ;
+border:grey 1px solid;
+padding: 10px 20px;
+border-radius: 10px;
+margin-top: 20px;
+}
+
+.btn:hover {
+
+box-shadow: 0 5px 50px 0 skyblue inset,0 5px 50px 0 grey ,0 5px 50px 0 grey inset, 0 5px 50px 0 grey ;
+}
+ * {  box-sizing: border-box;}
+
+h1{text-shadow: 0 0 0.2em steelblue, 0 0 0.2em steelblue, 0 0 0.2em #87F;
+  font-family: 'Sofia';font-size: 29px;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid steelblue;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.label{
+  color: antiquewhite;
+  text-shadow: 0 0 0.2em steelblue , 0 0 0.2em steelblue, 0 0 0.2em #87F;
+  font-size: 15px;
+}
+.container {
+  border-radius: 5px;
+  padding:40px;
+}
+
+</style>
+<body>
+
+  <header id="header" class="alt">
+    <a href="#menu" class="toggle"><span>Menu</span></a>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="WelcomeToCll">Home</a></li>
+        <li><a href="Who_We_are?">About</a></li>
+        <li><a href="contact">Contact</a></li>
+    </ul>
+</nav>
+
+    <section id="one" class="wrapper style2">
+      <div class="inner">
+       <center> <div class="box">
+          <div class="content">
+            <header>
+             
+              <h1>  GET IN TOUCH WITH US
+                <br> Question? Comment? We're Always Happy to Help
+           
+                </h1>
+                <div class="image fit">
+                  <img src="cll.png" alt="" />
+                </div>
+                   <div class="container">
+                       <form  action="/contact" method="POST"  >
+                           <label class="label" for="fname">First Name</label>
+                           <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                           <label class="label" for="lname">Last Name</label>
+                           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                           <label class="label" for="email">Email</label>
+
+                           <input type="text" id="email" name="email" placeholder="email..">
+                           <label  class="label" for="subject">Subject</label>
+                           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                           <input class="btn bootstrapcdn" type="submit"  value="Submit">
+                       </form>
+                   </div>
+             
+            </header>
+          </div>
+        </div></center>
+      </div>
+    </section>
+
+    </div>
+</body>
+<!-- Scripts -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrolly.min.js"></script>
+<script src="/js/jquery.scrollex.min.js"></script>
+<script src="/js/skel.min.js"></script>
+<script src="/js/util.js"></script>
+<script src="/js/main.js"></script>
+
+
+</html>
